@@ -1,7 +1,7 @@
 from os import name
 from dbclass import TaskDatabase
 
-db = TaskDatabase('teste')
+db = TaskDatabase('TaskDatabase')
 MENU = """
 Type 1 to create a new product
 Type 2 to show registered products
