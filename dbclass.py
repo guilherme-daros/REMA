@@ -196,8 +196,7 @@ class TaskDatabase:
         try:
             connector = sqlite3.connect(self.path)
             cursor = connector.cursor()
-            print("haha")
-            cursor.execute('SELECT * FROM Sales ORDER BY Id_sales;')
+            cursor.execute('SELECT * FROM Sales ORDER BY datetimeStamp;')
 
             query = cursor.fetchall()
             for row in query:
